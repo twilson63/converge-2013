@@ -206,6 +206,9 @@ app.directive('blink', function() {
             <img src="http://www.acuteaday.com/blog/wp-content/uploads/2010/12/baby-hedgehog-cute-201210.jpeg"></img>
             <h3>Top Hedgehog</h3>
             <a href="http://www.acuteaday.com/blog/wp-content/uploads/2010/12/baby-hedgehog-cute-201210.jpeg">http://www.acuteaday.com/blog/wp-content/uploads/2010/12/baby-hedgehog-cute-201210.jpeg</a>
+            <a http="http://twilson63.github.io/hedgehog-practice/">
+              http://twilson63.github.io/hedgehog-practice/
+            </a>
           </section>
           <section>
             <h3>Socket.io</h3>
@@ -463,15 +466,20 @@ socket.on('vote', function(hog) {
             <h3>Leaders</h3>
             <p>Template</p>
             <pre>
-              <code>
-&lt;div class=&quot;span2&quot; ng-repeat=&quot;hog in hogs | orderBy: &#x27;-votes&#x27;&quot;&gt;
+              <code style="font-size: 1.8em;line-height: 1em;">
+&lt;div class=&quot;span2&quot; 
+  ng-repeat=&quot;hog in hogs 
+    | orderBy: &#x27;-votes&#x27;&quot;&gt;
   &lt;a href=&quot;#&quot; ng-click=&quot;vote(hog)&quot;&gt;
     &lt;img 
       style=&quot;height: 120px; width: 120px;&quot;
       ng-src=&quot;{{hog.url}}&quot; 
      /&gt;
   &lt;/a&gt;
-  &lt;div style=&quot;padding: 30px;font-size: 3em;font-weight: bold;&quot;&gt;{{hog.votes}}&lt;/div&gt;
+  &lt;div 
+    style=&quot;padding: 30px;font-size: 3em;font-weight: bold;&quot;&gt;
+      {{hog.votes}}
+  &lt;/div&gt;
 &lt;/div&gt;                
               </code>
             </pre>
@@ -535,6 +543,10 @@ socket.on('vote', function(hog) {
             <h3><a href="http://ngmodules.org/" target="new">ngModules</a></h3>
             <h3><a href="http://mgcrea.github.com/angular-strap" target="new">AngularStrap</a></h3>
           </section>
+        </section>
+        <section>
+          <h3>Thank You</h3>
+          <p>Questions</p>
         </section>
         </div>
       </div>
